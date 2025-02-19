@@ -132,3 +132,4 @@ E:\NET\ShoeZone Backend\Shoezone\bin\Debug\net8.0\runtimes\win-x64\native\krb5_6
 E:\NET\ShoeZone Backend\Shoezone\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
 E:\NET\ShoeZone Backend\Shoezone\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 E:\NET\ShoeZone Backend\Shoezone\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+E:\NET\ShoeZone Backend\Shoezone\obj\Debug\net8.0\Shoezone.sourcelink.json

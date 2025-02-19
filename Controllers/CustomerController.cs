@@ -25,10 +25,10 @@ namespace Shoezone.Controllers
 
         }
 
-        [HttpGet("{Customerid}")]
-        public async Task<ActionResult<Customer>> GetCustomerById(int Customerid)
+        [HttpGet("{CustomerId}")]
+        public async Task<ActionResult<Customer>> GetCustomerById(int CustomerId)
         {
-            var Customer = await dbContext.Customers.FindAsync(Customerid);
+            var Customer = await dbContext.Customers.FindAsync(CustomerId);
             if (Customer != null)
             {
                 return NotFound();
@@ -37,7 +37,7 @@ namespace Shoezone.Controllers
         }
 
         [HttpPost]
-        public async    Task<ActionResult<Customer>> addCustomer(Customer Customer)
+        public async    Task<ActionResult<Customer>> AddCustomer(Customer Customer)
         {
             await dbContext.Customers.AddAsync(Customer);
             await dbContext.SaveChangesAsync();
@@ -46,9 +46,9 @@ namespace Shoezone.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult> UpdateCustomer(int Customerid, Customer Customer)
+        public async Task<ActionResult> UpdateCustomer(int CustomerId, Customer Customer)
         {
-            if(Customerid!=Customer.CustomerId)
+            if(CustomerId!=Customer.CustomerId)
             {
                 return BadRequest();
                     
@@ -60,10 +60,10 @@ namespace Shoezone.Controllers
             return Ok(Customer);
         }
 
-        [HttpDelete("{Customerid}")]
-        public async Task<ActionResult<Product>> deleteCustomer(int Customerid)
+        [HttpDelete("{CustomerId}")]
+        public async Task<ActionResult<Product>> DeleteCustomer(int CustomerId)
         {
-            var Customer = await dbContext.Products.FindAsync(Customerid);
+            var Customer = await dbContext.Products.FindAsync(CustomerId);
             if (Customer == null)
             {
                 return NotFound();

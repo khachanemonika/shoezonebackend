@@ -46,7 +46,7 @@ namespace Shoezone.Controllers
         }
 
         [HttpPut("{productid}")]
-        public async Task<ActionResult<Product>> updateStudent(int productid, Product product)
+        public async Task<ActionResult<Product>> UpdateProduct(int productid, Product product)
         {
             if (productid != product.ProductID)
             {
@@ -58,7 +58,7 @@ namespace Shoezone.Controllers
         }
 
         [HttpDelete("{productid}")]
-        public async Task<ActionResult<Product>> deleteProduct(int productid)
+        public async Task<ActionResult<Product>> DeleteProduct(int productid)
         {
             var product = await dbContext.Products.FindAsync(productid);
             if (product == null)
@@ -71,7 +71,7 @@ namespace Shoezone.Controllers
         }
         [Route("SaveFile")]
         [HttpPost]
-        public async Task<ActionResult> saveFile(IFormFile file)
+        public async Task<ActionResult> SaveFile(IFormFile file)
         {
             if(file== null)
             {

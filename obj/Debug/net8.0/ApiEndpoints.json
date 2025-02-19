@@ -21,7 +21,7 @@
   },
   {
     "ContainingType": "Shoezone.Controllers.CustomerController",
-    "Method": "addCustomer",
+    "Method": "AddCustomer",
     "RelativePath": "api/Customer",
     "HttpMethod": "POST",
     "IsController": true,
@@ -54,7 +54,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Customerid",
+        "Name": "CustomerId",
         "Type": "System.Int32",
         "IsRequired": false
       },
@@ -69,13 +69,13 @@
   {
     "ContainingType": "Shoezone.Controllers.CustomerController",
     "Method": "GetCustomerById",
-    "RelativePath": "api/Customer/{Customerid}",
+    "RelativePath": "api/Customer/{CustomerId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Customerid",
+        "Name": "CustomerId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -94,14 +94,14 @@
   },
   {
     "ContainingType": "Shoezone.Controllers.CustomerController",
-    "Method": "deleteCustomer",
-    "RelativePath": "api/Customer/{Customerid}",
+    "Method": "DeleteCustomer",
+    "RelativePath": "api/Customer/{CustomerId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Customerid",
+        "Name": "CustomerId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -311,7 +311,7 @@
   },
   {
     "ContainingType": "Shoezone.Controllers.ProductController",
-    "Method": "updateStudent",
+    "Method": "UpdateProduct",
     "RelativePath": "api/Product/{productid}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -342,7 +342,7 @@
   },
   {
     "ContainingType": "Shoezone.Controllers.ProductController",
-    "Method": "deleteProduct",
+    "Method": "DeleteProduct",
     "RelativePath": "api/Product/{productid}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -368,7 +368,7 @@
   },
   {
     "ContainingType": "Shoezone.Controllers.ProductController",
-    "Method": "saveFile",
+    "Method": "SaveFile",
     "RelativePath": "api/Product/SaveFile",
     "HttpMethod": "POST",
     "IsController": true,

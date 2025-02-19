@@ -94,7 +94,7 @@
         ],
         "parameters": [
           {
-            "name": "Customerid",
+            "name": "CustomerId",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -128,14 +128,14 @@
         }
       }
     },
-    "/api/Customer/{Customerid}": {
+    "/api/Customer/{CustomerId}": {
       "get": {
         "tags": [
           "Customer"
         ],
         "parameters": [
           {
-            "name": "Customerid",
+            "name": "CustomerId",
             "in": "path",
             "required": true,
             "schema": {
@@ -173,7 +173,7 @@
         ],
         "parameters": [
           {
-            "name": "Customerid",
+            "name": "CustomerId",
             "in": "path",
             "required": true,
             "schema": {
