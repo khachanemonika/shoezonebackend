@@ -3,14 +3,9 @@ using Shoezone.Model;
 
 namespace Shoezone.Data
 {
-    public class ApplicationDbContext:DbContext
+    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
 
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
-        {
-            
-        }
-
         public virtual DbSet<Product> Products { get; set; } = null!;
 
         public virtual DbSet<Customer> Customers { get; set; } = null!;

@@ -128,14 +128,14 @@
         }
       }
     },
-    "/api/Customer/{CustomerId}": {
+    "/api/Customer/{customerId}": {
       "get": {
         "tags": [
           "Customer"
         ],
         "parameters": [
           {
-            "name": "CustomerId",
+            "name": "customerId",
             "in": "path",
             "required": true,
             "schema": {
@@ -173,7 +173,7 @@
         ],
         "parameters": [
           {
-            "name": "CustomerId",
+            "name": "customerId",
             "in": "path",
             "required": true,
             "schema": {

@@ -8,14 +8,9 @@ namespace Shoezone.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OrderController : ControllerBase
+    public class OrderController(ApplicationDbContext dbContext) : ControllerBase
     {
-        private readonly ApplicationDbContext dbContext;
-
-        public OrderController(ApplicationDbContext dbContext)
-        {
-            this.dbContext = dbContext;
-        }
+        private readonly ApplicationDbContext dbContext = dbContext;
 
         [HttpGet]
         public async Task<ActionResult<List<Order>>> GetAllOrder()
@@ -25,52 +20,52 @@ namespace Shoezone.Controllers
 
         }
 
-        [HttpGet("{Orderid}")]
-        public async Task<ActionResult<Order>> GetOrderById(int Orderid)
+        [HttpGet("{orderId}")]
+        public async Task<ActionResult<Order>> GetOrderById(int orderId)
         {
-            var Order = await dbContext.Orders.FindAsync(Orderid);
-            if (Order != null)
+            var order = await dbContext.Orders.FindAsync(orderId);
+            if (order != null)
             {
                 return NotFound();
             }
-            return Ok(Order);
+            return Ok(order);
         }
 
         [HttpPost]
-        public async Task<ActionResult<Order>> addOrder(Order Order)
+        public async Task<ActionResult<Order>> AddOrder(Order order)
         {
-            await dbContext.Orders.AddAsync(Order);
+            await dbContext.Orders.AddAsync(order);
             await dbContext.SaveChangesAsync();
-            return Ok(Order);
+            return Ok(order);
 
         }
 
         [HttpPut]
-        public async Task<ActionResult> UpdateOrder(int Orderid, Order Order)
+        public async Task<ActionResult> UpdateOrder(int orderId, Order order)
         {
-            if (Orderid != Order.OrderId)
+            if (orderId != order.OrderId)
             {
                 return BadRequest();
 
 
             }
-            dbContext.Entry(Order).State = EntityState.Modified;
+            dbContext.Entry(order).State = EntityState.Modified;
             await dbContext.SaveChangesAsync();
 
-            return Ok(Order);
+            return Ok(order);
         }
 
-        [HttpDelete("{Orderid}")]
-        public async Task<ActionResult<Product>> deleteOrder(int Orderid)
+        [HttpDelete("{orderId}")]
+        public async Task<ActionResult<Order>> DeleteOrder(int orderId)
         {
-            var Order = await dbContext.Products.FindAsync(Orderid);
-            if (Order == null)
+            var order = await dbContext.Orders.FindAsync(orderId);
+            if (order == null)
             {
                 return NotFound();
             }
-            dbContext.Products.Remove(Order);
+            dbContext.Orders.Remove(order);
             await dbContext.SaveChangesAsync();
-            return Ok(Order);
+            return Ok(order);
         }
 
 

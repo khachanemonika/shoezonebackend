@@ -69,13 +69,13 @@
   {
     "ContainingType": "Shoezone.Controllers.CustomerController",
     "Method": "GetCustomerById",
-    "RelativePath": "api/Customer/{CustomerId}",
+    "RelativePath": "api/Customer/{customerId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "CustomerId",
+        "Name": "customerId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -95,13 +95,13 @@
   {
     "ContainingType": "Shoezone.Controllers.CustomerController",
     "Method": "DeleteCustomer",
-    "RelativePath": "api/Customer/{CustomerId}",
+    "RelativePath": "api/Customer/{customerId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "CustomerId",
+        "Name": "customerId",
         "Type": "System.Int32",
         "IsRequired": true
       }

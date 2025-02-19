@@ -8,15 +8,11 @@ namespace Shoezone.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class ProductController(ApplicationDbContext dbContext, IWebHostEnvironment env) : ControllerBase
     {
-        private readonly ApplicationDbContext dbContext;
-        private readonly IWebHostEnvironment env;
-        public ProductController(ApplicationDbContext dbContext,IWebHostEnvironment env)
-        {
-            this.dbContext = dbContext;
-            this.env = env;
-        }
+        private readonly ApplicationDbContext dbContext = dbContext;
+        private readonly IWebHostEnvironment env = env;
+
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetAllProduct()
         {

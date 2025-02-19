@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "E:\\NET\\ShoeZone Backend\\Shoezone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|e:\\net\\shoezone backend\\shoezone\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|e:\\net\\shoezone backend\\shoezone\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|e:\\net\\shoezone backend\\shoezone\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|e:\\net\\shoezone backend\\shoezone\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|solutionrelative:model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|e:\\net\\shoezone backend\\shoezone\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|e:\\net\\shoezone backend\\shoezone\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|e:\\net\\shoezone backend\\shoezone\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|solutionrelative:model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|e:\\net\\shoezone backend\\shoezone\\model\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|e:\\net\\shoezone backend\\shoezone\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|solutionrelative:model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|e:\\net\\shoezone backend\\shoezone\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA4A0B03-4B74-43D0-92D0-C6EF38B53DA4}|Shoezone.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Customer.cs",
               "DocumentMoniker": "E:\\NET\\ShoeZone Backend\\Shoezone\\Model\\Customer.cs",
               "RelativeDocumentMoniker": "Model\\Customer.cs",
@@ -51,7 +51,8 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T12:34:33.637Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -63,32 +64,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "E:\\NET\\ShoeZone Backend\\Shoezone\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
               "ToolTip": "E:\\NET\\ShoeZone Backend\\Shoezone\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAWwAwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T11:51:51.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "OrderController.cs",
               "DocumentMoniker": "E:\\NET\\ShoeZone Backend\\Shoezone\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
               "ToolTip": "E:\\NET\\ShoeZone Backend\\Shoezone\\Controllers\\OrderController.cs",
               "RelativeToolTip": "Controllers\\OrderController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAmwD4AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAWwAwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T15:42:59.515Z"
+              "WhenOpened": "2025-02-11T15:42:59.515Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Product.cs",
               "DocumentMoniker": "E:\\NET\\ShoeZone Backend\\Shoezone\\Model\\Product.cs",
               "RelativeDocumentMoniker": "Model\\Product.cs",
@@ -100,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Order.cs",
               "DocumentMoniker": "E:\\NET\\ShoeZone Backend\\Shoezone\\Model\\Order.cs",
               "RelativeDocumentMoniker": "Model\\Order.cs",
@@ -118,21 +120,23 @@
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
               "ToolTip": "E:\\NET\\ShoeZone Backend\\Shoezone\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAWwA0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T07:56:26.601Z"
+              "WhenOpened": "2025-02-11T07:56:26.601Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "E:\\NET\\ShoeZone Backend\\Shoezone\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
               "ToolTip": "E:\\NET\\ShoeZone Backend\\Shoezone\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T16:28:48.762Z"
+              "WhenOpened": "2025-02-11T16:28:48.762Z",
+              "EditorCaption": ""
             }
           ]
         }

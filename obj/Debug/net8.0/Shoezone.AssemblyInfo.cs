@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shoezone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcd4c53fa02e8a2f520a73062915a1c8009a0b6d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edb1bdf45f60e7125b973be7b716e90c859541e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shoezone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shoezone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

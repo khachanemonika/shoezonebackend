@@ -8,15 +8,10 @@ namespace Shoezone.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomerController : ControllerBase
+    public class CustomerController(ApplicationDbContext dbContext) : ControllerBase
     {
-        private readonly ApplicationDbContext dbContext;
-        public CustomerController(ApplicationDbContext dbContext)
-        {
-            this.dbContext = dbContext;
-            
-        }
-        
+        private readonly ApplicationDbContext dbContext = dbContext;
+
         [HttpGet]
         public async Task<ActionResult<List<Customer>>> GetAllCustomer()
         {
@@ -24,53 +19,54 @@ namespace Shoezone.Controllers
                 return Ok(allCustomer);
 
         }
-
-        [HttpGet("{CustomerId}")]
-        public async Task<ActionResult<Customer>> GetCustomerById(int CustomerId)
+        
+        [HttpGet("{customerId}")]
+        public async Task<ActionResult<Customer>> GetCustomerById(int customerId)
         {
-            var Customer = await dbContext.Customers.FindAsync(CustomerId);
-            if (Customer != null)
+            var Customer = await dbContext.Customers.FindAsync(customerId);
+            if (Customer == null)
             {
                 return NotFound();
             }
+           
             return Ok(Customer);
         }
 
         [HttpPost]
-        public async    Task<ActionResult<Customer>> AddCustomer(Customer Customer)
+        public async Task<ActionResult<Customer>> AddCustomer(Customer customer)
         {
-            await dbContext.Customers.AddAsync(Customer);
+            await dbContext.Customers.AddAsync(customer);
             await dbContext.SaveChangesAsync();
-            return Ok(Customer);
+            return Ok(customer);
 
         }
 
         [HttpPut]
-        public async Task<ActionResult> UpdateCustomer(int CustomerId, Customer Customer)
+        public async Task<ActionResult> UpdateCustomer(int customerId, Customer customer)
         {
-            if(CustomerId!=Customer.CustomerId)
+            if(customerId!=customer.CustomerId)
             {
                 return BadRequest();
                     
 
              }
-            dbContext.Entry(Customer).State = EntityState.Modified;
+            dbContext.Entry(customer).State = EntityState.Modified;
             await dbContext.SaveChangesAsync();
 
-            return Ok(Customer);
+            return Ok(customer);
         }
 
-        [HttpDelete("{CustomerId}")]
-        public async Task<ActionResult<Product>> DeleteCustomer(int CustomerId)
+        [HttpDelete("{customerId}")]
+        public async Task<ActionResult<Customer>> DeleteCustomer(int customerId)
         {
-            var Customer = await dbContext.Products.FindAsync(CustomerId);
-            if (Customer == null)
+            var customer = await dbContext.Customers.FindAsync(customerId);
+            if (customer == null)
             {
                 return NotFound();
             }
-            dbContext.Products.Remove(Customer);
+            dbContext.Customers.Remove(customer);
             await dbContext.SaveChangesAsync();
-            return Ok(Customer);
+            return Ok(customer);
         }
 
 
